@@ -4,9 +4,9 @@
         <attribute name="name" value="TO2"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 08:25:45 PM"/>
+        <attribute name="saved" value="2024-10-02 08:34:55 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0wOS0yNzsxMDoxMToxOCBBTTsyNjMy"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODoyNTo0NSBQTTsxMzsyODAz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODozNDo1NSBQTTsxNTsyODA2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -91,7 +91,7 @@
                         <assign variable="FINISH" expression="&quot;---&quot;"/>
                     </else>
                 </if>
-                <output expression="ISBN &amp;&quot;|&quot;&amp; JUDUL &amp;&quot;|&quot;&amp; PENULIS &amp;&quot;|&quot;&amp; TAHUNTERBIT &amp;&quot;|&quot;&amp; PENERBIT &amp;&quot;|&quot;&amp; FORMATBUKU &amp;&quot;|&quot;&amp; Tofixed(HARGAPEMBELIAN,2) &amp;&quot;|&quot;&amp; Tofixed(MINIMUMMARGIN,2) &amp;&quot;|&quot;&amp; STOK &amp;&quot;|&quot;&amp; Tofixed(RATING,1) &amp;&quot;|&quot;&amp; KUALITAS &amp;&quot;|&quot;&amp; TIPEDISKON &amp;&quot;|&quot;&amp; FINISH" newline="True"/>
+                <output expression="ISBN&amp;&quot;|&quot;&amp;JUDUL&amp;&quot;|&quot;&amp;PENULIS&amp;&quot;|&quot;&amp;TAHUNTERBIT&amp;&quot;|&quot;&amp;PENERBIT&amp;&quot;|&quot;&amp;FORMATBUKU&amp;&quot;|&quot;&amp;HARGAPEMBELIAN&amp;&quot;|&quot;&amp;MINIMUMMARGIN&amp;&quot;|&quot;&amp;STOK&amp;&quot;|&quot;&amp;RATING&amp;&quot;|&quot;&amp;KUALITAS&amp;&quot;|&quot;&amp;TIPEDISKON&amp;&quot;|&quot;&amp;FINISH" newline="True"/>
                 <input variable="ISBN"/>
             </while>
         </body>

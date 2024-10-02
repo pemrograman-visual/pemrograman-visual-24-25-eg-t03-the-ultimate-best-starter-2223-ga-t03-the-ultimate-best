@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T03 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -61,12 +61,8 @@ public class T03 {
             } else {
                 fINISH = "---";
             }
-            System.out.println(iSBN + "|" + jUDUL + "|" + pENULIS + "|" + tAHUNTERBIT + "|" + pENERBIT + "|" + fORMATBUKU + "|" + toFixed(hARGAPEMBELIAN,2) + "|" + toFixed(mINIMUMMARGIN,2) + "|" + sTOK + "|" + toFixed(rATING,1) + "|" + kUALITAS + "|" + tIPEDISKON + "|" + fINISH);
+            System.out.println(iSBN + "|" + jUDUL + "|" + pENULIS + "|" + tAHUNTERBIT + "|" + pENERBIT + "|" + fORMATBUKU + "|" + hARGAPEMBELIAN + "|" + mINIMUMMARGIN + "|" + sTOK + "|" + rATING + "|" + kUALITAS + "|" + tIPEDISKON + "|" + fINISH);
             iSBN = input.nextLine();
         }
-    }
-    
-    private static String toFixed(double value, int digits) {
-        return String.format("%." + digits + "f", value);
     }
 }
