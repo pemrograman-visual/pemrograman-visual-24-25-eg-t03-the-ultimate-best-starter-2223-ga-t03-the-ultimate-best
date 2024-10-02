@@ -21,13 +21,13 @@ public class JavaApplication {
             harga = Double.parseDouble(input.nextLine());
             margin = Double.parseDouble(input.nextLine());
             diskon = margin * -1 / harga;
-            if (diskon > (double) 40 / 100) {
+            if (diskon > 0.4) {
                 keterangan = "Once in a lifetime";
             } else {
-                if (diskon > (double) 20 / 100 && diskon < (double) 40 / 100) {
+                if (0.2 < diskon && diskon < 0.4) {
                     keterangan = "Never come twice";
                 } else {
-                    if (diskon > 0 && diskon <= (double) 20 / 100) {
+                    if (diskon <= 0.2 && diskon > 0) {
                         keterangan = "No regret";
                     } else {
                         keterangan = "---";
