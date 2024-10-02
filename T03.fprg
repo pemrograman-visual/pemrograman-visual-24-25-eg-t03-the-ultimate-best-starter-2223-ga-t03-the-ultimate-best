@@ -4,9 +4,9 @@
         <attribute name="name" value="TO2"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 04:51:50 PM"/>
+        <attribute name="saved" value="2024-10-02 08:19:00 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0wOS0yNzsxMDoxMToxOCBBTTsyNjMy"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswNDo1MTo1MCBQTTs5OzI3NTE="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODoxOTowMCBQTTsxMDsyNzk0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -23,17 +23,17 @@
                 <input variable="FORMATBUKU"/>
                 <input variable="HARGAPEMBELIAN"/>
                 <input variable="MINIMUMMARGIN"/>
-                <if expression="MINIMUMMARGIN/HARGAPEMBELIAN&lt;-0.4">
+                <if expression="-(MINIMUMMARGIN/HARGAPEMBELIAN)&gt;0.4">
                     <then>
                         <assign variable="TIPEDISKON" expression="&quot;ONCE IN A LIFETIME&quot;"/>
                     </then>
                     <else>
-                        <if expression="MINIMUMMARGIN/HARGAPEMBELIAN&lt;-0.2">
+                        <if expression="0.2&lt;-(MINIMUMMARGIN/HARGAPEMBELIAN)&amp;&amp;(MINIMUMMARGIN/HARGAPEMBELIAN)&lt;0.4">
                             <then>
                                 <assign variable="TIPEDISKON" expression="&quot;NEVER COME TWICE&quot;"/>
                             </then>
                             <else>
-                                <if expression="MINIMUMMARGIN/HARGAPEMBELIAN&lt;=0">
+                                <if expression="(-(MINIMUMMARGIN/HARGAPEMBELIAN))&lt;=0.2&amp;&amp;(-(MINIMUMMARGIN/HARGAPEMBELIAN))&gt;0">
                                     <then>
                                         <assign variable="TIPEDISKON" expression="&quot;NO REGRET&quot;"/>
                                     </then>
@@ -47,31 +47,33 @@
                 </if>
                 <input variable="STOK"/>
                 <input variable="RATING"/>
-                <if expression="RATING&gt;=4.7 &amp;&amp; RATING&lt;5.0">
+                <if expression="RATING&gt;=4.7">
                     <then>
                         <assign variable="KUALITAS" expression="&quot;Best Pick&quot;"/>
                     </then>
                     <else>
-                        <if expression="RATING&gt;=4.5 &amp;&amp; RATING&lt;4.7">
+                        <if expression="RATING&gt;=4.5&amp;&amp;RATING&lt;4.7">
                             <then>
                                 <assign variable="KUALITAS" expression="&quot;Must Read&quot;"/>
                             </then>
                             <else>
-                                <if expression="RATING&gt;=4.0 &amp;&amp; RATING&lt;4.5">
+                                <if expression="RATING&gt;=4.0&amp;&amp;RATING&lt;4.5">
                                     <then>
                                         <assign variable="KUALITAS" expression="&quot;Recommended&quot;"/>
                                     </then>
                                     <else>
-                                        <if expression="RATING&gt;=3.0 &amp;&amp; RATING&lt;4.0">
+                                        <if expression="RATING&gt;=3.0&amp;&amp;RATING&lt;4.0">
                                             <then>
                                                 <assign variable="KUALITAS" expression="&quot;Average&quot;"/>
                                             </then>
                                             <else>
-                                                <if expression="RATING&gt;0 &amp;&amp; RATING&lt;3.0">
+                                                <if expression="RATING&lt;3.0">
                                                     <then>
                                                         <assign variable="KUALITAS" expression="&quot;Low&quot;"/>
                                                     </then>
-                                                    <else/>
+                                                    <else>
+                                                        <assign variable="KATEGORI" expression="&quot;Low&quot;"/>
+                                                    </else>
                                                 </if>
                                             </else>
                                         </if>

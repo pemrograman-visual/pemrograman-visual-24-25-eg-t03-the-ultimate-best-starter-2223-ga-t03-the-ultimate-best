@@ -1,5 +1,5 @@
-MENGATASI ERROR PADA PROGRAM
-MEMBUAT LOOPING PADA PROGRAM
-MEMAKAI INPUT DAN OUTPUT
-BERHASIL MENYELESAIKAN TUGAS
-BERHASIL MENYELESAIKAN PROGRAM
+berhasil menyelesaikan program
+berhasil memperbaiki error
+memakai branching
+memakai input dan output
+memakai looping

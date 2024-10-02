@@ -4,7 +4,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -21,13 +21,13 @@ public class JavaApplication {
             fORMATBUKU = input.nextLine();
             hARGAPEMBELIAN = Double.parseDouble(input.nextLine());
             mINIMUMMARGIN = Double.parseDouble(input.nextLine());
-            if (mINIMUMMARGIN / hARGAPEMBELIAN < -0.4) {
+            if (-(mINIMUMMARGIN / hARGAPEMBELIAN) > 0.4) {
                 tIPEDISKON = "ONCE IN A LIFETIME";
             } else {
-                if (mINIMUMMARGIN / hARGAPEMBELIAN < -0.2) {
+                if (0.2 < -(mINIMUMMARGIN / hARGAPEMBELIAN) && mINIMUMMARGIN / hARGAPEMBELIAN < 0.4) {
                     tIPEDISKON = "NEVER COME TWICE";
                 } else {
-                    if (mINIMUMMARGIN / hARGAPEMBELIAN <= 0) {
+                    if (-(mINIMUMMARGIN / hARGAPEMBELIAN) <= 0.2 && -(mINIMUMMARGIN / hARGAPEMBELIAN) > 0) {
                         tIPEDISKON = "NO REGRET";
                     } else {
                         tIPEDISKON = "---";
@@ -36,7 +36,7 @@ public class JavaApplication {
             }
             sTOK = Integer.parseInt(input.nextLine());
             rATING = Double.parseDouble(input.nextLine());
-            if (rATING >= 4.7 && rATING < 5.0) {
+            if (rATING >= 4.7) {
                 kUALITAS = "Best Pick";
             } else {
                 if (rATING >= 4.5 && rATING < 4.7) {
@@ -48,8 +48,10 @@ public class JavaApplication {
                         if (rATING >= 3.0 && rATING < 4.0) {
                             kUALITAS = "Average";
                         } else {
-                            if (rATING > 0 && rATING < 3.0) {
+                            if (rATING < 3.0) {
                                 kUALITAS = "Low";
+                            } else {
+                                KATEGORI = "Low";
                             }
                         }
                     }
