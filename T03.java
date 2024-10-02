@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class t03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,27 +15,27 @@ public class JavaApplication {
         while (!iSBN.equals("---")) {
             judul = input.nextLine();
             penulis = input.nextLine();
-            tahun = Integer.parseInt(input.nextLine());
+            tahun = input.nextInt();
             penerbit = input.nextLine();
             format = input.nextLine();
-            harga = Double.parseDouble(input.nextLine());
-            margin = Double.parseDouble(input.nextLine());
+            harga = input.nextDouble();
+            margin = input.nextDouble();
             diskon = margin * -1 / harga;
-            if (diskon >= (double) 40 / 100) {
+            if (diskon >= 40 / 100) {
                 keterangan = "Once in a life time";
             } else {
-                if (diskon >= (double) 20 / 100 && diskon < (double) 40 / 100) {
+                if (diskon >= 20 / 100 && diskon < 40 / 100) {
                     keterangan = "Never come twice";
                 } else {
-                    if (diskon > 0 && diskon < (double) 20 / 100) {
+                    if (diskon > 0 && diskon < 20 / 100) {
                         keterangan = "No Regret";
                     } else {
                         keterangan = "---";
                     }
                 }
             }
-            stok = Integer.parseInt(input.nextLine());
-            rating = Double.parseDouble(input.nextLine());
+            stok = input.nextInt();
+            rating = input.nextDouble();
             if (rating >= 4.7) {
                 kategori = "Best Pick";
             } else {
@@ -58,8 +58,12 @@ public class JavaApplication {
             } else {
                 ultimate = "---";
             }
-            System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahun + "|" + penerbit + "|" + format + "|" + harga + "|" + margin + "|" + stok + "|" + rating + "|" + kategori + "|" + keterangan + "|" + ultimate);
+            System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahun + "|" + penerbit + "|" + format + "|" + harga + "|" + margin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + keterangan + "|" + ultimate);
             iSBN = input.nextLine();
         }
+    }
+    
+    private static String toFixed(double value, int digits) {
+        return String.format("%." + digits + "f", value);
     }
 }

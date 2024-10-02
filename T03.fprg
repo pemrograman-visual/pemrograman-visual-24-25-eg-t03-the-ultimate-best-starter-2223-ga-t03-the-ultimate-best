@@ -4,11 +4,11 @@
         <attribute name="name" value="T02"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 08:50:18 PM"/>
+        <attribute name="saved" value="2024-10-02 08:56:58 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtRjc4Q0hCNkc7MjAyNC0wOS0yNzsxMDozMzowNiBBTTsyNjA0"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtRjc4Q0hCNkc7MjAyNC0wOS0yNzsxMDo0MDo1NCBBTTsxO0FTVVM7TEFQVE9QLUY3OENIQjZHOzIwMjQtMDktMDY7MTA6MTA6NTYgQU07VDAxLmZwcmc7NjA5MA=="/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtRjc4Q0hCNkc7MjAyNC0xMC0wMjswNDo0MjoxNCBQTTsyOzI3MTU="/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODo1MDoxOCBQTTszOzI3NTI="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODo1Njo1OCBQTTsyOzI3NjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -87,7 +87,7 @@
                         <assign variable="Ultimate" expression="&quot;---&quot;"/>
                     </else>
                 </if>
-                <output expression="ISBN&amp;&quot;|&quot;&amp;Judul&amp;&quot;|&quot;&amp;Penulis&amp;&quot;|&quot;&amp;Tahun&amp;&quot;|&quot;&amp;Penerbit&amp;&quot;|&quot;&amp;Format&amp;&quot;|&quot;&amp;Harga&amp;&quot;|&quot;&amp;Margin&amp;&quot;|&quot;&amp;Stok&amp;&quot;|&quot;&amp;Rating&amp;&quot;|&quot;&amp;Kategori&amp;&quot;|&quot;&amp;Keterangan&amp;&quot;|&quot;&amp;Ultimate" newline="True"/>
+                <output expression="ISBN&amp;&quot;|&quot;&amp;Judul&amp;&quot;|&quot;&amp;Penulis&amp;&quot;|&quot;&amp;Tahun&amp;&quot;|&quot;&amp;Penerbit&amp;&quot;|&quot;&amp;Format&amp;&quot;|&quot;&amp;Harga&amp;&quot;|&quot;&amp;Margin&amp;&quot;|&quot;&amp;Stok&amp;&quot;|&quot;&amp;tofixed(Rating,1)&amp;&quot;|&quot;&amp;Kategori&amp;&quot;|&quot;&amp;Keterangan&amp;&quot;|&quot;&amp;Ultimate" newline="True"/>
                 <input variable="ISBN"/>
             </while>
         </body>
