@@ -4,9 +4,9 @@
         <attribute name="name" value="TO2"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 08:21:05 PM"/>
+        <attribute name="saved" value="2024-10-02 08:25:45 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0wOS0yNzsxMDoxMToxOCBBTTsyNjMy"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODoyMTowNSBQTTsxMTsyNzkz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUDA4OUFRVkM7MjAyNC0xMC0wMjswODoyNTo0NSBQTTsxMzsyODAz"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -72,7 +72,7 @@
                                                         <assign variable="KUALITAS" expression="&quot;Low&quot;"/>
                                                     </then>
                                                     <else>
-                                                        <assign variable="KATEGORI" expression="&quot;Low&quot;"/>
+                                                        <assign variable="KUALITAS" expression="&quot;Low&quot;"/>
                                                     </else>
                                                 </if>
                                             </else>

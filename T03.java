@@ -50,7 +50,7 @@ public class JavaApplication {
                             if (rATING < 3.0) {
                                 kUALITAS = "Low";
                             } else {
-                                KATEGORI = "Low";
+                                kUALITAS = "Low";
                             }
                         }
                     }
