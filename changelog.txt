@@ -2,4 +2,4 @@ berhasil menyelesaikan program
 berhasil memperbaiki error
 memakai branching
 memakai input dan output
-memakai looping
+berhasil membuat looping
