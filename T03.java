@@ -1,9 +1,10 @@
 // 12S24015-LUCAS PARDEDE
 // 12S24022-INGRATE SIHOMBING
+
 import java.util.*;
 import java.lang.Math;
 
-public class T03 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
