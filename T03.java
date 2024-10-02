@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T03 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -24,10 +24,10 @@ public class T03 {
             if (diskon > (double) 40 / 100) {
                 keterangan = "Once in a lifetime";
             } else {
-                if (diskon >= (double) 20 / 100 && diskon < (double) 40 / 100) {
+                if (diskon > (double) 20 / 100 && diskon < (double) 40 / 100) {
                     keterangan = "Never come twice";
                 } else {
-                    if (diskon > 0 && diskon < (double) 20 / 100) {
+                    if (diskon > 0 && diskon <= (double) 20 / 100) {
                         keterangan = "No regret";
                     } else {
                         keterangan = "---";
