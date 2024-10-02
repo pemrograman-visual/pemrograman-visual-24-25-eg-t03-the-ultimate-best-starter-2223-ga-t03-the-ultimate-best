@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class t03 {
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -20,22 +20,22 @@ public class t03 {
             format = input.nextLine();
             harga = Double.parseDouble(input.nextLine());
             margin = Double.parseDouble(input.nextLine());
+            stok = Integer.parseInt(input.nextLine());
+            rating = Double.parseDouble(input.nextLine());
             diskon = margin * -1 / harga;
-            if (diskon > 0.4) {
+            if (diskon > (double) 40 / 100) {
                 keterangan = "Once in a lifetime";
             } else {
-                if (0.2 < diskon && diskon < 0.4) {
+                if ((double) 20 / 100 < diskon && diskon < (double) 40 / 100) {
                     keterangan = "Never come twice";
                 } else {
-                    if (diskon <= 0.2 && diskon > 0) {
+                    if (diskon <= (double) 20 / 100 && diskon > 0) {
                         keterangan = "No regret";
                     } else {
                         keterangan = "---";
                     }
                 }
             }
-            stok = Integer.parseInt(input.nextLine());
-            rating = Double.parseDouble(input.nextLine());
             if (rating >= 4.7) {
                 kategori = "Best Pick";
             } else {
