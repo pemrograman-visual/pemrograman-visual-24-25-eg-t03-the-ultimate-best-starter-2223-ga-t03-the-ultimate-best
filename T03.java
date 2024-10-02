@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T03 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -58,12 +58,8 @@ public class T03 {
             } else {
                 ultimate = "---";
             }
-            System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahun + "|" + penerbit + "|" + format + "|" + harga + "|" + margin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori + "|" + keterangan + "|" + ultimate);
+            System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahun + "|" + penerbit + "|" + format + "|" + harga + "|" + margin + "|" + stok + "|" + rating + "|" + kategori + "|" + keterangan + "|" + ultimate);
             iSBN = input.nextLine();
         }
-    }
-    
-    private static String toFixed(double value, int digits) {
-        return String.format("%." + digits + "f", value);
     }
 }
