@@ -1,5 +1,2 @@
 berhasil menyelesaikan program
 berhasil memperbaiki error
-memakai branching
-memakai input dan output
-berhasil membuat looping
