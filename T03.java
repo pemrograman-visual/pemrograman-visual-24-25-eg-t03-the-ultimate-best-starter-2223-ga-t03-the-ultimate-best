@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class t03 {
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,27 +15,27 @@ public class t03 {
         while (!iSBN.equals("---")) {
             judul = input.nextLine();
             penulis = input.nextLine();
-            tahun = input.nextInt();
+            tahun = Integer.parseInt(input.nextLine());
             penerbit = input.nextLine();
             format = input.nextLine();
-            harga = input.nextDouble();
-            margin = input.nextDouble();
+            harga = Double.parseDouble(input.nextLine());
+            margin = Double.parseDouble(input.nextLine());
             diskon = margin * -1 / harga;
-            if (diskon >= 40 / 100) {
-                keterangan = "Once in a life time";
+            if (diskon > (double) 40 / 100) {
+                keterangan = "Once in a lifetime";
             } else {
-                if (diskon >= 20 / 100 && diskon < 40 / 100) {
+                if (diskon >= (double) 20 / 100 && diskon < (double) 40 / 100) {
                     keterangan = "Never come twice";
                 } else {
-                    if (diskon > 0 && diskon < 20 / 100) {
-                        keterangan = "No Regret";
+                    if (diskon > 0 && diskon < (double) 20 / 100) {
+                        keterangan = "No regret";
                     } else {
                         keterangan = "---";
                     }
                 }
             }
-            stok = input.nextInt();
-            rating = input.nextDouble();
+            stok = Integer.parseInt(input.nextLine());
+            rating = Double.parseDouble(input.nextLine());
             if (rating >= 4.7) {
                 kategori = "Best Pick";
             } else {
@@ -54,7 +54,7 @@ public class t03 {
                 }
             }
             if (kategori.equals("Best Pick") && keterangan.equals("Once in a lifetime")) {
-                ultimate = "The Ultimate Best";
+                ultimate = "The ultimate best";
             } else {
                 ultimate = "---";
             }
